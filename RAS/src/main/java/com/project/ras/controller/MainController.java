@@ -11,6 +11,10 @@ public class MainController {
         return "Main/MainPage";
     }
 
+    @GetMapping("/test1")
+    public String Test1(){
+        return "Main/MainPageTest1";
+    }
 
 
 }

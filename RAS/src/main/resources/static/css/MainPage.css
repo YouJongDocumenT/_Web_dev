@@ -1,0 +1,300 @@
+body {
+    background-color: #141517
+}
+.btn-outline-secondary-custom {
+    --bs-btn-color: #6c757d;
+    --bs-btn-border-color: 0;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #6c757d;
+    --bs-btn-hover-border-color: #6c757d;
+    --bs-btn-focus-shadow-rgb: 108, 117, 125;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #6c757d;
+    --bs-btn-active-border-color: #6c757d;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #6c757d;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #6c757d;
+    --bs-gradient: none;
+    font-weight: bold; /* 글자 두께를 늘립니다. */
+    color: white; /* 글자색을 흰색으로 설정합니다. */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.slider {
+    width: 1800px;
+    margin: 0px auto;
+}
+.slider .slick-slide {
+    margin: 10px;
+}
+.slick-prev:before, .slick-next:before {
+    color: #444444;
+}
+
+.Afreeca_Slider {
+    font-family: 'MaplestoryOTFBold', sans-serif; /* MaplestoryOTFBold 폰트를 사용하되, 해당 폰트가 로드되지 않은 경우에는 sans-serif를 대체 폰트로 사용 */
+    color: white;
+    margin-top: 60px; /* 공백 크기 조정 */
+    margin-left: 70px; /* 여기에 사용자가 지정한 수치를 입력하세요 */
+    text-align: left; /* 텍스트를 오른쪽으로 이동시킵니다 */
+}
+.Chezzic_Slider {
+    font-family: 'MaplestoryOTFBold', sans-serif;
+    color: white;
+    margin-top: 60px; /* 공백 크기 조정 */
+    margin-left: 70px; /* 여기에 사용자가 지정한 수치를 입력하세요 */
+    text-align: left; /* 텍스트를 오른쪽으로 이동시킵니다 */
+}
+.Daum_Slider {
+    font-family: 'MaplestoryOTFBold', sans-serif;
+    color: white;
+    margin-top: 60px; /* 공백 크기 조정 */
+    margin-left: 70px; /* 여기에 사용자가 지정한 수치를 입력하세요 */
+    text-align: left; /* 텍스트를 오른쪽으로 이동시킵니다 */
+}
+
+.crown_Slider {
+    font-family: 'MaplestoryOTFBold', sans-serif;
+    color: white;
+    margin-top: 15px; /* 공백 크기 조정 */
+    margin-left: 20px; /* 여기에 사용자가 지정한 수치를 입력하세요 */
+    text-align: left; /* 텍스트를 오른쪽으로 이동시킵니다 */
+}
+
+
+/* 카페24 모야모야 */
+@font-face {
+    font-family: 'Cafe24Moyamoya-Regular-v1.0';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/Cafe24Moyamoya-Regular-v1.0.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 메이플 폰트 */
+@font-face {
+    font-family: 'MaplestoryOTFBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 메이플 폰트 bold300 */
+@font-face {
+    font-family: 'MaplestoryOTFBold300';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+.tab {
+    overflow: hidden;
+    border: none;
+    background-color: #212529;
+    margin-top: 5px;
+    margin-left: 70px; /* 오른쪽으로 50px 이동 */
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: 0.0625em solid;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: 0.3s;
+    font-family: 'MaplestoryOTFBold300', sans-serif;
+    color: lightslategray;
+    border-radius: 20px;
+    margin-right: 10px;
+    width: 80px;
+    height: auto;
+
+}
+
+.tab button:hover {
+    background-color: rgb(129, 107, 255);;
+}
+
+.tab button.active {
+    background-color: rgb(129, 107, 255);
+}
+
+.tabcontent {
+    height: 100px;
+    padding: 20px;
+    border: none;
+    border-top: none;
+}
+
+.Theme {
+    font-family: 'Cafe24Moyamoya-Regular-v1.0', sans-serif;
+    text-decoration: none; /* 하이퍼링크의 밑줄 제거 */
+    margin-right: 40px;
+    margin-left: 20px;
+    font-size: 40px; /* 폰트 크기를 16px로 설정 */
+    color: white;
+}
+
+.header {
+    font-family: 'MaplestoryOTFBold', sans-serif;
+    font-size: 30px; /* 폰트 크기를 16px로 설정 */
+}
+.p_font {
+    font-family: 'MaplestoryOTFBold300', sans-serif;
+}
+
+.Choice_header {
+    font-family: 'MaplestoryOTFBold', sans-serif;
+    color: white;
+    margin-top: 60px; /* 공백 크기 조정 */
+    margin-left: 70px; /* 여기에 사용자가 지정한 수치를 입력하세요 */
+    text-align: left; /* 텍스트를 오른쪽으로 이동시킵니다 */
+}
+
+/*상단*/
+.top_tag {
+    display: flex; /* 가로 정렬 설정 */
+    width: auto; /* 가로 길이 설정 */
+    height: auto; /* 높이 설정 */
+}
+.popular_tag {
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 750px; /* 가로 길이 설정 */
+    height: 830px; /* 높이 설정 */
+    background-color: #212529; /* 배경색 설정 */
+    border-radius: 10px; /* 테두리의 둥글기 정도 설정 */
+}
+.week_tag {
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 750px; /* 가로 길이 설정 */
+    height: 830px; /* 높이 설정 */
+    background-color: #212529; /* 배경색 설정 */
+    border-radius: 10px; /* 테두리의 둥글기 정도 설정 */
+}
+.crown_tag {
+    display: flex; /* Flexbox 레이아웃을 사용 */
+    flex-direction: column; /* 세로 방향으로 정렬 */
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 280px; /* 가로 길이 설정 */
+    height: 470px; /* 높이 설정 */
+    background-color: #212529; /* 배경색 설정 */
+    border-radius: 10px; /* 테두리의 둥글기 정도 설정 */
+}
+
+.AD_top {
+    margin-top: 32px;
+    margin-left: 20px;
+    width: 280px; /* 가로 길이 설정 */
+    height: 70px; /* 높이 설정 */
+    border-radius: 10px; /* 테두리의 둥글기 정도 설정 */
+}
+
+.AD_bottom {
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 280px; /* 가로 길이 설정 */
+    height: 150px; /* 높이 설정 */
+    border-radius: 10px; /* 테두리의 둥글기 정도 설정 */
+}
+
+.popTag_top {
+    display: flex; /* 가로 정렬 설정 */
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 720px; /* 가로 길이 설정 */
+    height:50px; /* 높이 설정 */
+    background-color: #212529; /* 배경색 설정 */
+}
+.popTag_inside_1 {
+    display: flex; /* 가로 정렬 설정 */
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 720px; /* 가로 길이 설정 */
+    height: 90px; /* 높이 설정 */
+    background-color: #212529; /* 배경색 설정 */
+    border: 1px solid lightslategray; /* 테두리 스타일 설정 (두께, 종류, 색상) */
+    border-radius: 10px; /* 테두리의 둥글기 정도 설정 */
+    align-items: center; /* 세로 중앙 정렬 */
+}
+.popTag_inside_2 {
+    display: flex; /* 가로 정렬 설정 */
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 720px; /* 가로 길이 설정 */
+    height: 90px; /* 높이 설정 */
+    background-color: purple; /* 배경색 설정 */
+}
+.fontMaple {
+    font-family: 'MaplestoryOTFBold', sans-serif;
+}
+
+.popTag_hide_top {
+    display: flex; /* Flexbox 레이아웃을 사용 */
+    flex-direction: column; /* 요소들을 세로 방향으로 배치 */
+    width: 600px; /* 가로 길이 설정 */
+}
+.popTag_info {
+    border: 1px solid lightslategray; /* 테두리 스타일 설정 (두께, 종류, 색상) */
+    border-radius: 10px; /* 테두리의 둥글기 정도 설정 */
+    width: 600px; /* 가로 길이 설정 */
+    height: 40px; /* 높이 설정 */
+}
+
+/*테이블*/
+table.type09 {
+    border-collapse: collapse;
+    text-align: left;
+}
+table.type09 thead th {
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    color: #369;
+    border-bottom: 3px solid #036;
+}
+table.type09 tbody th {
+    height: 10px;
+    width: 100px;
+    font-size: 10px;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    background: #212529;
+}
+table.type09 tbody tr {
+    height: 10px;
+    width: 100px;
+    font-size: 10px;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    background: #212529;
+}
+table.type09 td {
+    height: 10px;
+    width: 350px;
+    font-size: 10px;
+    padding: 10px;
+    vertical-align: top;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

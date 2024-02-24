@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Dashboard - SB Admin</title>
+
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/Test1.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+    <!-- slick slide CDN -->
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+
+
+
+
+</head>
+<body>
+        <!-- 네비게이션바 TOP -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#" class="Li_logo">이경준</a></li>
+                <li><a href="#" class="Li_a">카테고리</a></li>
+                <li><a href="#" class="Li_a">스트리머</a></li>
+                <li><a href="#" class="Li_a">설정</a></li>
+                <li><a href="#" class="Li_a">기타</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="Top-search-div">
+                <div class="search">
+                    <input type="text" class="search-input" placeholder="검색어 입력">
+                    <img class="search-img" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png">
+                </div>
+
+                <div class="data-count">
+                    <div class="data-first">
+                        <div>3,156,348</div>
+                        <div>팔로워 수</div>
+                    </div>
+                    <div class="data-second">
+                        <div>4,157,065</div>
+                        <div>방송 수</div>
+                    </div>
+                    <div class="data-third">
+                        <div>9,857</div>
+                        <div>정상 수</div>
+                    </div>
+                </div>
+
+                <div class="canvas-count">
+                    <div class="div-canv-fir"><canvas id="myChart1" class="canvas-first"></canvas></div>
+                    <div class="div-canv-sec"><canvas id="myChart2" class="canvas-second"></canvas></div>
+                    <div class="div-canv-thir"><canvas id="myChart3" class="canvas-third"></canvas></div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <div class="div-left">
+                    <h3 class="h3-head">Information<small class="small-head">최고 시청자순</small></h3>
+                    <table class="l-table">
+                        <tr th:each="i : ${#numbers.sequence(1, 10)}">
+                            <td class="l-fir-td"><img src="Cheez/temtem.png" alt="" class="st-img"/></td>
+                            <td class="l-sec-td">
+                                <a class="l-a">탬탬버린</a>
+                                <div class="l-d">It contains all the streamer information</div>
+                            </td>
+                            <td class="l-thir-td">
+                                <div class="l-thir-div-1">23,016</div>
+                                <div class="l-thir-div-2">평균 19,485</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="div-right">
+                    <h3 class="h3-head">Information<small class="small-head">최고 시청자순</small></h3>
+                    <table class="r-table">
+                        <tr th:each="i : ${#numbers.sequence(1, 10)}">
+                            <td class="r-fir-td"><img src="Cheez/temtem.png" alt="" class="st-img"/></td>
+                            <td class="r-sec-td">
+                                <a class="r-a">탬탬버린</a>
+                                <div class="r-d">It contains all the streamer information</div>
+                            </td>
+                            <td class="r-thir-td">
+                                <div class="r-thir-div-1">23,016</div>
+                                <div class="r-thir-div-2">평균 19,485</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 클립 영상 -->
+            <div class="clip-div">
+                <h3 class="h3-head">Last Week HotClip</h3>
+                    <div class="line-1">
+                        <div class="display-div-1"><img src="Cheez/temtemSt.png" alt="" class="st-img-divImg"/></div>
+                        <div class="clip-div-inline">
+                            <div class="st-img-div"><img src="Cheez/temtem.png" alt="" class="st-img"/></div>
+                            <div class="clip-in-div">
+                                <span class="sp-content">건실한 직업 가지고 계시네요^ㅁ^)/</span>
+                                <a class="a-nickname">탬탬버린</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="line-2">
+                        <div class="display-div-1"><img src="Cheez/temtemSt.png" alt="" class="st-img-divImg"/></div>
+                        <div class="clip-div-inline">
+                            <div class="st-img-div"><img src="Cheez/temtem.png" alt="" class="st-img"/></div>
+                            <div class="clip-in-div">
+                                <span class="sp-content">건실한 직업 가지고 계시네요^ㅁ^)/</span>
+                                <a class="a-nickname">탬탬버린</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="line-3">
+                        <div class="display-div-1"><img src="Cheez/temtemSt.png" alt="" class="st-img-divImg"/></div>
+                        <div class="clip-div-inline">
+                            <div class="st-img-div"><img src="Cheez/temtem.png" alt="" class="st-img"/></div>
+                            <div class="clip-in-div">
+                                <span class="sp-content">건실한 직업 가지고 계시네요^ㅁ^)/</span>
+                                <a class="a-nickname">탬탬버린</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="line-4">
+                        <div class="display-div-1"><img src="Cheez/temtemSt.png" alt="" class="st-img-divImg"/></div>
+                        <div class="clip-div-inline">
+                            <div class="st-img-div"><img src="Cheez/temtem.png" alt="" class="st-img"/></div>
+                            <div class="clip-in-div">
+                                <span class="sp-content">건실한 직업 가지고 계시네요^ㅁ^)/</span>
+                                <a class="a-nickname">탬탬버린</a>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="line-5">
+                    <div class="display-div-1"><img src="Cheez/temtemSt.png" alt="" class="st-img-divImg"/></div>
+                    <div class="clip-div-inline">
+                        <div class="st-img-div"><img src="Cheez/temtem.png" alt="" class="st-img"/></div>
+                        <div class="clip-in-div">
+                            <span class="sp-content">건실한 직업 가지고 계시네요^ㅁ^)/</span>
+                            <a class="a-nickname">탬탬버린</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="line-6">
+                    <div class="display-div-1"><img src="Cheez/temtemSt.png" alt="" class="st-img-divImg"/></div>
+                    <div class="clip-div-inline">
+                        <div class="st-img-div"><img src="Cheez/temtem.png" alt="" class="st-img"/></div>
+                        <div class="clip-in-div">
+                            <span class="sp-content">건실한 직업 가지고 계시네요^ㅁ^)/</span>
+                            <a class="a-nickname">탬탬버린</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="line-7">
+                    <div class="display-div-1"><img src="Cheez/temtemSt.png" alt="" class="st-img-divImg"/></div>
+                    <div class="clip-div-inline">
+                        <div class="st-img-div"><img src="Cheez/temtem.png" alt="" class="st-img"/></div>
+                        <div class="clip-in-div">
+                            <span class="sp-content">건실한 직업 가지고 계시네요^ㅁ^)/</span>
+                            <a class="a-nickname">탬탬버린</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="line-8">
+                    <div class="display-div-1"><img src="Cheez/temtemSt.png" alt="" class="st-img-divImg"/></div>
+                    <div class="clip-div-inline">
+                        <div class="st-img-div"><img src="Cheez/temtem.png" alt="" class="st-img"/></div>
+                        <div class="clip-in-div">
+                            <span class="sp-content">건실한 직업 가지고 계시네요^ㅁ^)/</span>
+                            <a class="a-nickname">탬탬버린</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="game-box">
+                <div class="div-left">
+                    <h3 class="h3-head">최근 인기 게임<small class="small-head">평균 시청자</small></h3>
+                    <table class="l-table">
+                        <tr th:each="i : ${#numbers.sequence(1, 10)}">
+                            <td class="l-fir-td"><img src="GamePoster/leagueOfLegend.png" alt="" class="st-img"/></td>
+                            <td class="l-sec-td">
+                                <a class="l-a">리그 오브 레전드</a>
+                            </td>
+                            <td class="l-thir-td">
+                                <div class="l-thir-div-1">23,016</div>
+                                <div class="l-thir-div-2">평균 19,485</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="div-right">
+                    <h3 class="h3-head">스팀 게임 순위<small class="small-head">한주 평균 채널</small></h3>
+                    <table class="r-table">
+                        <tr th:each="i : ${#numbers.sequence(1, 10)}">
+                            <td class="r-fir-td"><img src="GamePoster/zelda.png" alt="" class="st-img"/></td>
+                            <td class="r-sec-td">
+                                <a class="r-a">젤다의 전설</a>
+                            </td>
+                            <td class="r-thir-td">
+                                <div class="r-thir-div-1">276</div>
+                                <div class="r-thir-div-2">상승 11</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </main>
+        <img src="Ad/ad1.png" class="d-block w-100" alt="...">
+        <footer class="py-4 bg-dark mt-auto">
+            <div class="container-fluid px-4">
+                <div class="d-flex align-items-center justify-content-between small">
+                    <div class="text-muted">Copyright &copy; Your Website 2023</div>
+                    <div>
+                        <a href="#">Privacy Policy</a>
+                        &middot;
+                        <a href="#">Terms &amp; Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+<script src="assets/demo/chart-area-demo.js"></script>
+<script src="assets/demo/chart-bar-demo.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+<script src="js/datatables-simple-demo.js"></script>
+
+<!--slick_slide-->
+<script>
+    $( document ).ready( function() {
+        $( '.slider' ).slick( {
+            autoplay: false, // 오토플레이
+            autoplaySpeed: 1000, // 오토 속도
+            slidesToShow: 6, // 가로 뷰 갯수
+            slidesToScroll: 6, // 스크롤 갯수
+        } );
+    } );
+</script>
+
+<!--tap-->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // DOM이 로드되면 실행되는 함수
+
+        // Tab1을 보여주고 Tab1 버튼에 'active' 클래스 추가
+        document.getElementById("Tab1").style.display = "block";
+        document.querySelector(".tablinks").classList.add("active");
+    });
+
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+
+        // 모든 탭 컨텐츠를 숨김
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // 모든 탭 버튼에 있는 'active' 클래스 제거
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("active");
+        }
+
+        // 선택한 탭 컨텐츠를 보여주고 해당 탭 버튼에 'active' 클래스 추가
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.classList.add("active");
+    }
+</script>
+
+
+        <script>
+            // 데이터
+            var data = {
+                labels: ["Data 1", "Data 2", "Data 3", "Data 4"],
+                datasets: [{
+                    label: "My Dataset",
+                    borderColor: "rgba(255, 99, 132, 1)",
+                    backgroundColor: "rgba(0, 0, 0, 0)", // 투명 바탕
+                    data: [10, 20, 30, 40],
+                }]
+            };
+
+            // 그래프 옵션
+            var options = {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+                            fontColor: "white", // 텍스트 색상을 흰색으로 설정
+                            fontFamily: "'Cafe24Moyamoya-Regular-v1.0', sans-serif" // 텍스트 폰트 설정
+                        }
+                    }]
+                }
+            };
+
+            // 캔버스 요소 가져오기
+            var ctx = document.getElementById("myChart1").getContext("2d");
+
+            // 꺽은선 그래프 생성
+            var myLineChart = new Chart(ctx, {
+                type: 'line',
+                data: data,
+                options: options
+            });
+        </script>
+
+        <script>
+            // 데이터
+            var data = {
+                labels: ["Data 1", "Data 2", "Data 3", "Data 4"],
+                datasets: [{
+                    label: "My Dataset",
+                    borderColor: "rgba(255, 99, 132, 1)",
+                    backgroundColor: "rgba(0, 0, 0, 0)", // 투명 바탕
+                    data: [10, 20, 30, 40],
+                }]
+            };
+
+            // 그래프 옵션
+            var options = {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+                            fontColor: "white", // 텍스트 색상을 흰색으로 설정
+                            fontFamily: "'Cafe24Moyamoya-Regular-v1.0', sans-serif" // 텍스트 폰트 설정
+                        }
+                    }]
+                }
+            };
+
+            // 캔버스 요소 가져오기
+            var ctx = document.getElementById("myChart2").getContext("2d");
+
+            // 꺽은선 그래프 생성
+            var myLineChart = new Chart(ctx, {
+                type: 'line',
+                data: data,
+                options: options
+            });
+        </script>
+
+        <script>
+            // 데이터
+            var data = {
+                labels: ["Data 1", "Data 2", "Data 3", "Data 4"],
+                datasets: [{
+                    label: "My Dataset",
+                    borderColor: "rgba(255, 99, 132, 1)",
+                    backgroundColor: "rgba(0, 0, 0, 0)", // 투명 바탕
+                    data: [10, 20, 30, 40],
+                }]
+            };
+
+            // 그래프 옵션
+            var options = {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+                            fontColor: "white", // 텍스트 색상을 흰색으로 설정
+                            fontFamily: "'Cafe24Moyamoya-Regular-v1.0', sans-serif" // 텍스트 폰트 설정
+                        }
+                    }]
+                }
+            };
+
+            // 캔버스 요소 가져오기
+            var ctx = document.getElementById("myChart3").getContext("2d");
+
+            // 꺽은선 그래프 생성
+            var myLineChart = new Chart(ctx, {
+                type: 'line',
+                data: data,
+                options: options
+            });
+        </script>
+
+
+</body>
+</html>
