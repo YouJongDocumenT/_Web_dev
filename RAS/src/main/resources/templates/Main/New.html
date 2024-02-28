@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Dashboard - SB Admin</title>
+
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/New.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+    <!-- slick slide CDN -->
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- Chart.js 라이브러리 추가 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+
+
+</head>
+<body>
+        <!-- 네비게이션바 TOP -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#" class="Li_logo">이경준</a></li>
+                <li><a href="#" class="Li_a">카테고리</a></li>
+                <li><a href="#" class="Li_a">스트리머</a></li>
+                <li><a href="#" class="Li_a">설정</a></li>
+                <li><a href="#" class="Li_a">기타</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="container-main">
+                <div class="div-top-info">
+
+                </div>
+
+                <div class="div-category">
+                    <div class="div-category-one">
+
+                    </div>
+
+                    <div class="div-category-two">
+
+                    </div>
+
+                    <div class="div-category-three">
+
+                    </div>
+
+                    <div class="div-category-four">
+
+                    </div>
+                </div>
+
+                <div class="div-flatform-donation">
+                    <div class="div-flatformGraph">
+                        <div style="display: flex; width: auto;">
+                            <h3 style="color: white; margin-top: 20px; margin-left: 30px; font-size: 16px;">총 후원금액</h3>
+                            <span style="margin-top: 20px;" class="live">실시간</span>
+                        </div>
+                        <div style="display: flex; width: auto;">
+                            <h1 style="color: white; margin-left: 30px; font-size: 35px;">5,861,254,870</h1>
+                            <h2 style="margin-left: 5px; margin-top: 17px; font-size: 20px; color: #888;">원</h2>
+                        </div>
+
+                        <div class="chart-area-donation">
+                            <canvas id="areaChart"></canvas>
+                        </div>
+
+                    </div>
+                    <div class="div-flatformRank">
+                        <div style="display: flex; width: auto;">
+                            <h3 style="color: white; margin-top: 20px; margin-left: 30px; font-size: 16px;">플랫폼 수익 랭킹</h3>
+                            <span style="margin-top: 20px;" class="live">실시간</span>
+                        </div>
+                        <div style="width: 270px; height: 85px; border-bottom: 1px solid #4d5154; margin-left: 30px">
+                            <h1 style="color: white; margin-top: 5px; font-size: 30px; font-weight: bold;">
+                                <img src="flatform/afcLogo.png" alt="" class="flt-ytb" style="height: 35px; width: 35px;"/>아프리카TV
+                            </h1>
+                            <h2 style="font-size: 12px; color: #888;">4,216,587,340 원</h2>
+                        </div>
+
+                        <div class="flatform-rank1" style="display: flex;">
+                            <div><h5 style="color: #888; font-weight: bold; margin-left: 20px; margin-top: 15px; font-size: 16px;">1</h5></div>
+                            <div style=" margin-left: 15px;">
+                                <div style="font-size: 14px; color: white; font-weight: bold; margin-top: 8px; display: flex;">아프리카TV<img src="flatform/afcLogo.png" alt="" class="flt-ytb" style="height: 15px; width: 15px; margin-left: 5px; margin-top: 2px;"/></div>
+                                <h4 style="font-size: 12px; color: #888;">afreecaTV</h4>
+                            </div>
+                            <div style=" margin-left: 23px;">
+                                <h3 style="font-size: 12px; color: white; font-weight: bold; margin-top: 17px;">4,216,587,340 원</h3>
+                            </div>
+                        </div>
+
+                        <div class="flatform-rank2 " style="display: flex;">
+                            <div><h5 style="color: #888; font-weight: bold; margin-left: 20px; margin-top: 15px; font-size: 16px;">2</h5></div>
+                            <div style=" margin-left: 15px;">
+                                <div style="font-size: 14px; color: white; font-weight: bold; margin-top: 8px; display: flex;">치지직<img src="flatform/chkLogo.png" alt="" class="flt-ytb" style="height: 15px; width: 15px; margin-left: 5px; margin-top: 2px;"/></div>
+                                <h4 style="font-size: 12px; color: #888;">chzzk</h4>
+                            </div>
+                            <div style=" margin-left: 55px;">
+                                <h3 style="font-size: 12px; color: white; font-weight: bold; margin-top: 17px;">2,216,587,340 원</h3>
+                            </div>
+                        </div>
+
+                        <div class="flatform-rank3" style="display: flex;">
+                            <div><h5 style="color: #888; font-weight: bold; margin-left: 20px; margin-top: 15px; font-size: 16px;">3</h5></div>
+                            <div style=" margin-left: 15px;">
+                                <div style="font-size: 14px; color: white; font-weight: bold; margin-top: 8px; display: flex;">유튜브<img src="flatform/ytbLogo.png" alt="" class="flt-ytb" style="height: 12px; width: 17px; margin-left: 5px; margin-top: 4px;"/></div>
+                                <h4 style="font-size: 12px; color: #888;">youTube</h4>
+                            </div>
+                            <div style=" margin-left: 55px;">
+                                <h3 style="font-size: 12px; color: white; font-weight: bold; margin-top: 17px;">1,216,587,340 원</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="h3-flateform">플랫폼별 후원 랭킹</h3>
+
+                <div class="div-category-flatform">
+                    <div class="div-category-flatform-afreeca">
+                        <img src="flatform/afreecaImage.jpg" alt="" class="flt-afc"/>
+                    </div>
+
+                    <div class="div-category-flatform-chzzk">
+                        <img src="flatform/chzzkImage.png" alt="" class="flt-chk"/>
+                    </div>
+
+                    <div class="div-category-flatform-youtube">
+                        <img src="flatform/youtubeImage.png" alt="" class="flt-ytb"/>
+                    </div>
+                </div>
+
+                <div class="div-category-flatform">
+                    <div class="div-category-flatform-graph">
+
+                    </div>
+                    <div class="div-category-flatform-rank">
+
+                    </div>
+                </div>
+
+                <h3 class="h3-category">카테고리별 후원 랭킹</h3>
+
+                    <div class="div-category-select">
+
+                    </div>
+                <div class="div-category">
+                    <div class="div-category-graph">
+
+                    </div>
+                    <div class="div-category-rank">
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </main>
+        <img src="Ad/ad1.png" class="d-block w-100" alt="...">
+        <footer class="py-4 bg-dark mt-auto">
+            <div class="container-fluid px-4">
+                <div class="d-flex align-items-center justify-content-between small">
+                    <div class="text-muted">Copyright &copy; Your Website 2023</div>
+                    <div>
+                        <a href="#">Privacy Policy</a>
+                        &middot;
+                        <a href="#">Terms &amp; Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+<script src="assets/demo/chart-area-demo.js"></script>
+<script src="assets/demo/chart-bar-demo.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+<script src="js/datatables-simple-demo.js"></script>
+
+
+        <script>
+            // 차트를 그릴 데이터 생성
+            var data = {
+                labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+                datasets: [
+                    {
+                        label: "Title 1",
+                        backgroundColor: "rgba(14, 56, 129, 0.2)",
+                        borderColor: "rgba(71, 67, 255, 1)",
+                        borderWidth: 1,
+                        data: [randomValue(), randomValue(), randomValue(), randomValue(), randomValue(), randomValue(), randomValue(), randomValue(), randomValue(), randomValue()]
+                    },
+                    {
+                        label: "Title 2",
+                        backgroundColor: "rgba(9, 92, 63, 0.2)",
+                        borderColor: "rgba(67, 255, 140, 1)",
+                        borderWidth: 1,
+                        data: [randomValue(), randomValue(), randomValue(), randomValue(), randomValue(), randomValue(), randomValue(), randomValue(), randomValue(), randomValue()]
+                    },
+                    {
+                        label: "Title 3",
+                        backgroundColor: "rgba(220, 53, 69, 0.2)",
+                        borderColor: "rgba(255, 67, 83, 1)",
+                        borderWidth: 1,
+                        data: [randomValue(), randomValue(), randomValue(), randomValue(), randomValue(), randomValue(), randomValue(), randomValue(), randomValue(), randomValue()]
+                    }
+                ]
+            };
+
+            // 차트 생성
+            var ctx = document.getElementById('areaChart').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'line',
+                data: data,
+                options: {
+                    tooltips: {
+                        enabled: true,
+                        mode: 'index',
+                        intersect: false,
+                        backgroundColor: 'rgba(255, 99, 132, 0.8)', // 배경색
+                        titleFontColor: '#fff', // 제목 글자색
+                        bodyFontColor: '#fff', // 본문 글자색
+                        titleFontSize: 16, // 제목 글자 크기
+                        bodyFontSize: 14, // 본문 글자 크기
+                        borderColor: 'rgba(255, 99, 132, 1)', // 테두리 색
+                        borderWidth: 1, // 테두리 두께
+                        caretSize: 10, // 툴팁 화살표 크기
+                        caretPadding: 15, // 툴팁 화살표와 텍스트 간격
+                        displayColors: false // 툴팁 내 색상 표시 여부
+                    },
+                    legend: {
+                        display: false // 범례를 표시하지 않음
+                    },
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                fontColor: 'rgba(136, 136, 136, 1)', // y축 레이블의 색상을 설정
+                                fontSize: 12
+                            },
+                            gridLines: {
+                                color: "#3B3B3B",
+                                lineWidth: 1,
+                                drawBorder: false // x축의 첫 번째 눈금에 세로줄을 그리지 않음
+                            }
+                        }],
+                        xAxes: [{
+                            ticks: {
+                                fontColor: 'rgba(136, 136, 136, 1)', // x축 레이블의 색상을 설정
+                                fontSize: 12
+                            },
+                            gridLines: {
+                                color: "#3B3B3B",
+                                lineWidth: 0
+                            }
+                        }]
+                    }
+                }
+            });
+
+            // 랜덤한 값을 반환하는 함수
+            function randomValue() {
+                return Math.floor(Math.random() * 100);
+            }
+        </script>
+
+</body>
+</html>

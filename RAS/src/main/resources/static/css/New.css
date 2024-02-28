@@ -1,0 +1,355 @@
+/* 카페24 모야모야 */
+@font-face {
+    font-family: 'Cafe24Moyamoya-Regular-v1.0';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/Cafe24Moyamoya-Regular-v1.0.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 메이플 폰트 */
+@font-face {
+    font-family: 'MaplestoryOTFBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+/*display: flex; */
+/*align-items: center;  수직 방향 가운데 정렬합니다. - Flex 컨테이너의 교차 축(수직 축)에 대한 정렬을 설정*/
+/*justify-content: center; Flex 컨테이너의 주 축(수평 축)에 대한 정렬*/
+
+
+
+
+
+
+
+
+
+
+body {
+    background-color: white;
+}
+
+/* 네비게이션바 */
+.navbar {
+    background-color: #05101E;
+    box-shadow: 5px 5px 5px 1px #000000; /*오른쪽 아래쪽 이동후 흐림정도, 확산정도*/
+    z-index: 9999; /* 다른 요소들 위에 나타나도록 z-index 설정 */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+}
+
+.Li_a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    margin-top: 18px;
+    font-family: 'Cafe24Moyamoya-Regular-v1.0', sans-serif;
+    font-size: 14px;
+}
+
+.Li_logo {
+    display: block;
+    color: white;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    font-family: 'Cafe24Moyamoya-Regular-v1.0', sans-serif;
+    font-size: 30px;
+    margin: 0 15px 0 300px; /*상 우 하 좌*/
+}
+
+.navbar li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+
+.container-main {
+    position: relative;
+    overflow: hidden; /* 부모 요소에 대해 overflow: hidden;을 적용하여 자식 요소의 margin이 부모 요소를 벗어나지 않도록 합니다.*/
+    width: auto; /*가로*/
+    height: 4000px; /*세로*/
+    background-color: #1f1f1f;
+
+}
+
+.div-top-info {
+    height: 50px;
+    width: 1200px;
+    background-color: #1e2022;
+    margin: 25px auto 0 ; /* 위쪽으로 25px 이동하고, 가로축 가운데 정렬 */
+    border-radius: 10px; /* 모든 모서리를 10px만큼 둥글게 설정 */
+    border: 1px solid #4d5154; /* 테두리 두께: 1px, 스타일: 실선, 색상: 검정 */
+}
+
+
+.div-category{
+    display: flex; /* 자식 요소들을 가로로 배열*/
+    position: relative;
+}
+
+.div-category-one {
+    width: 290px; /*가로*/
+    height: 130px; /*세로*/
+    background-color: #1e2022;
+    border-radius: 15px; /* 모든 모서리를 10px만큼 둥글게 설정 */
+    border: 1px solid #4d5154; /* 테두리 두께: 1px, 스타일: 실선, 색상: 검정 */
+    position: absolute;
+    top: 15px;
+    left: 353px;
+}
+
+.div-category-two {
+    width: 290px; /*가로*/
+    height: 130px; /*세로*/
+    background-color: #1e2022;
+    border-radius: 15px; /* 모든 모서리를 10px만큼 둥글게 설정 */
+    border: 1px solid #4d5154; /* 테두리 두께: 1px, 스타일: 실선, 색상: 검정 */
+    position: absolute;
+    top: 15px;
+    left: 658px;
+}
+
+.div-category-three {
+    width: 290px; /*가로*/
+    height: 130px; /*세로*/
+    background-color: #1e2022;
+    border-radius: 15px; /* 모든 모서리를 10px만큼 둥글게 설정 */
+    border: 1px solid #4d5154; /* 테두리 두께: 1px, 스타일: 실선, 색상: 검정 */
+    position: absolute;
+    top: 15px;
+    left: 960px;
+}
+
+.div-category-four {
+    width: 290px; /*가로*/
+    height: 130px; /*세로*/
+    background-color: #1e2022;
+    border-radius: 15px; /* 모든 모서리를 10px만큼 둥글게 설정 */
+    border: 1px solid #4d5154; /* 테두리 두께: 1px, 스타일: 실선, 색상: 검정 */
+    position: absolute;
+    top: 15px;
+    left: 1262px;
+}
+
+
+
+
+
+.div-flatform-donation {
+    display: flex;
+    position: relative;
+}
+
+.div-flatformGraph {
+    width: 847px; /*가로*/
+    height: 400px; /*세로*/
+    background-color: #1e2022;
+    border-radius: 15px; /* 모든 모서리를 10px만큼 둥글게 설정 */
+    border: 1px solid #4d5154; /* 테두리 두께: 1px, 스타일: 실선, 색상: 검정 */
+    position: absolute;
+    top: 160px;
+    left: 353px;
+}
+
+.chart-area-donation {
+    width: 800px; /*가로*/
+    height: 400px; /*세로*/
+    margin-left: 20px;
+}
+#areaChart {
+    width: 100%; /* 가로는 부모 요소에 맞게 설정 */
+    height: 290px; /* 세로는 부모 요소에 맞게 설정 */
+}
+
+.div-flatformRank {
+    width: 337px; /*가로*/
+    height: 400px; /*세로*/
+    background-color: #1e2022;
+    border-radius: 15px; /* 모든 모서리를 10px만큼 둥글게 설정 */
+    border: 1px solid #4d5154; /* 테두리 두께: 1px, 스타일: 실선, 색상: 검정 */
+    position: absolute;
+    top: 160px;
+    left: 1215px;
+}
+
+.flatform-rank1 {
+    width: 270px; /*가로*/
+    height: 55px; /*세로*/
+    background: linear-gradient(110deg, #0e3881 50px, #323232 86px);
+    border-radius: 5px; /* 모든 모서리를 10px만큼 둥글게 설정 */
+    border: 1px solid #4d5154; /* 테두리 두께: 1px, 스타일: 실선, 색상: 검정 */
+    position: absolute;
+    top: 150px;
+    left: 30px;
+}
+.flatform-rank2 {
+    width: 270px; /*가로*/
+    height: 55px; /*세로*/
+    background: linear-gradient(110deg, #095c3f 50px, #323232 86px);
+    background: linear-gradient(110deg, #095c3f 50px, #323232 86px);
+    border-radius: 5px; /* 모든 모서리를 10px만큼 둥글게 설정 */
+    border: 1px solid #4d5154; /* 테두리 두께: 1px, 스타일: 실선, 색상: 검정 */
+    position: absolute;
+    top: 216px;
+    left: 30px;
+}
+.flatform-rank3 {
+    width: 270px; /*가로*/
+    height: 55px; /*세로*/
+    background: linear-gradient(110deg, #FF4353 50px, #323232 86px);
+    border-radius: 5px; /* 모든 모서리를 10px만큼 둥글게 설정 */
+    border: 1px solid #4d5154; /* 테두리 두께: 1px, 스타일: 실선, 색상: 검정 */
+    position: absolute;
+    top: 282px;
+    left: 30px;
+}
+
+
+
+.div-category-flatform {
+    display: flex;
+    position: relative;
+}
+
+.h3-flateform{
+    position: absolute;
+    top: 670px;
+    left: 353px;
+    color: white;
+    font-size: 20px;
+}
+
+.div-category-flatform-afreeca {
+    position: absolute;
+    width: 390px; /*가로*/
+    height: 130px; /*세로*/
+    top: 630px;
+    left: 353px;
+}
+.flt-afc {
+    border-radius: 15px; /* 모든 모서리를 10px만큼 둥글게 설정 */
+}
+
+.div-category-flatform-chzzk {
+    width: 390px; /*가로*/
+    height: 130px; /*세로*/
+    background-color: #1e2022;
+    border-radius: 15px; /* 모든 모서리를 10px만큼 둥글게 설정 */
+    position: absolute;
+    top: 630px;
+    left: 758px;
+}
+.flt-chk {
+    border-radius: 15px; /* 모든 모서리를 10px만큼 둥글게 설정 */
+}
+
+
+.div-category-flatform-youtube {
+    width: 390px; /*가로*/
+    height: 130px; /*세로*/
+    background-color: #1e2022;
+    border-radius: 15px; /* 모든 모서리를 10px만큼 둥글게 설정 */
+    position: absolute;
+    top: 630px;
+    left: 1163px;
+}
+.flt-ytb {
+    border-radius: 15px; /* 모든 모서리를 10px만큼 둥글게 설정 */
+}
+
+
+.div-category-flatform-graph {
+    width: 847px; /*가로*/
+    height: 400px; /*세로*/
+    background-color: #1e2022;
+    border-radius: 15px; /* 모든 모서리를 10px만큼 둥글게 설정 */
+    border: 1px solid #4d5154; /* 테두리 두께: 1px, 스타일: 실선, 색상: 검정 */
+    position: absolute;
+    top: 777px;
+    left: 353px;
+}
+
+.div-category-flatform-rank {
+    width: 337px; /*가로*/
+    height: 400px; /*세로*/
+    background-color: #1e2022;
+    border-radius: 15px; /* 모든 모서리를 10px만큼 둥글게 설정 */
+    border: 1px solid #4d5154; /* 테두리 두께: 1px, 스타일: 실선, 색상: 검정 */
+    position: absolute;
+    top: 777px;
+    left: 1215px;
+}
+
+.h3-category {
+    position: absolute;
+    top: 1290px;
+    left: 353px;
+    color: white;
+    font-size: 20px;
+}
+
+.div-category-select {
+    position: absolute;
+    height: 50px;
+    width: 1200px;
+    background-color: #1e2022;
+    border-radius: 10px; /* 모든 모서리를 10px만큼 둥글게 설정 */
+    border: 1px solid #4d5154; /* 테두리 두께: 1px, 스타일: 실선, 색상: 검정 */
+    top: 1325px;
+    left: 353px;
+}
+
+.div-category-graph {
+    width: 847px; /*가로*/
+    height: 400px; /*세로*/
+    background-color: #1e2022;
+    border-radius: 15px; /* 모든 모서리를 10px만큼 둥글게 설정 */
+    border: 1px solid #4d5154; /* 테두리 두께: 1px, 스타일: 실선, 색상: 검정 */
+    position: absolute;
+    top: 1315px;
+    left: 353px;
+}
+
+.div-category-rank {
+    width: 337px; /*가로*/
+    height: 400px; /*세로*/
+    background-color: #1e2022;
+    border-radius: 15px; /* 모든 모서리를 10px만큼 둥글게 설정 */
+    border: 1px solid #4d5154; /* 테두리 두께: 1px, 스타일: 실선, 색상: 검정 */
+    position: absolute;
+    top: 1315px;
+    left: 1215px;
+}
+
+.live {
+    height: 20px;
+    width: 50px;
+    background-color: #FF4353;
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 10px; /* 모든 모서리를 10px만큼 둥글게 설정 */
+    margin-top: 30px;
+    margin-left: 10px;
+    color: white;
+}
